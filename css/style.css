@@ -1,0 +1,76 @@
+body{
+  font-family: arial,helvetica, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  padding: 0; /*extra space within an element*/
+  margin: 0; /*extra space around an element*/
+  background-color: #f4f4f4;
+}
+
+/* Global*/
+.container{
+  width: 80%;
+  margin:auto; /*moves it to middle*/
+  overflow:hidden; /*hide scroll option from div overflow*/
+
+}
+
+ ul{
+  margin: 0;
+  padding: 0;
+}
+
+header{
+  background-color: #35424a;
+  color: #fff;
+  padding-top: 30px;
+  min-height:70px; /* adjust height of content if smaller */
+  border-bottom:#e8491d 3px solid; /*color width style */
+}
+
+header a{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+
+
+header li {
+  float:left;
+  display: inline;
+  padding:0 20px 0 20px; /* top right bottom left*/
+
+}
+header #branding {
+  float:left;
+}
+
+header #branding h1{
+  margin:0;
+  text-transform: capitalize;
+}
+
+header nav{
+float: right;
+margin-top: 10px;
+}
+
+/* highlight first part of logo name and current page*/
+header .highlight , header .current a{
+  color: #e8491d;
+  font-weight: bold;
+}
+
+header a:hover{
+  color:#ccc;
+  font-weight: bold;
+}
+
+/* showcase */
+
+#showcase{
+  min-height: 400px;
+  background:url('../img/showcase.jpg') no-repeat;
+}
