@@ -10,7 +10,7 @@ body{
   }
   
   /* Global*/
-  .container{
+  .containerY{
     width: 80%; /* so as to b responsive*/
     margin:auto; /*moves it to middle*/
     overflow:hidden; /*hide scroll option from div overflow*/
