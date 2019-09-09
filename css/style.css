@@ -8,26 +8,30 @@ body{
     font: 15px/1.5 Arial, helvetica, sans-serif;
     /*font: size / line height font-type list;*/
   }
-  
+
   /* Global*/
   .container{
     width: 80%; /* so as to b responsive*/
     margin:auto; /*moves it to middle*/
     overflow:hidden; /*hide scroll option from div overflow*/
-  
+
   }
   .button_1{
-    padding: 10px;
+    padding:10px;
     background-color: #ff4d00;
+  /*  height: 35px;
+  padding-right: 10px;
+  padding-left: 10px;
+  */
     border:none;
     color: #fff;
   }
-  
+
    ul{
     margin: 0;
     padding: 0;
   }
-  
+
   header{
     background-color: #35424a;
     color: #fff;
@@ -35,58 +39,58 @@ body{
     min-height:70px; /* adjust height of content if smaller */
     border-bottom:#e8491d 3px solid; /*color width style */
   }
-  
-  
-  
+
+
+
   header a{
     color: #fff;
     text-decoration: none; /*removes lines*/
     text-transform: uppercase;
     font-size: 16px;
   }
-  
-  
-  
+
+
+
   header li {
     float:left;
     display:inline;
    padding:0 20px 0 20px; /* top right bottom left*/
-  
+
   }
   header #branding {
     float:left;
   }
-  
+
   header #branding h1{
     margin:0;
     text-transform: capitalize;
   }
-  
+
   header nav{
   float: right;
   margin-top: 10px;
   }
-  
+
   /* highlight first part of logo name and current page*/
   header .highlight , header .current a{
     color: #e8491d;
     font-weight: bold;
   }
-  
+
   header a:hover{
     color:#ccc;
     font-weight: bold;
   }
-  
+
   /* showcase */
-  
+
   #showcase{
     min-height: 400px;
     background:url("../img/showcase.jpg") no-repeat 0 -400px;
     text-align: center;
     color: #fff;
   }
-  
+
   #showcase h1{
     margin-top: 100px;
     font-size: 50px;
@@ -94,42 +98,51 @@ body{
   }
 
   #showcase p{
-  
+
     font-size: 20px;
   }
-  
+
   #newsletter{
     padding: 15px;
     background-color:#35424a;
     color:#fff;
   }
-  
+
   #newsletter h1{
     float:left;
   }
-  
+
   #newsletter form{
     float:right;
     margin-top:15px;
   }
-  
+
   #newsletter input[type='email']{
   padding:4px;
   height: 25px;
   width: 250px;
   }
+
   #boxes{
   margin-top: 40px;
-  
+
   }
-  
-  .box{
+
+  #boxes .box{
     display: inline-block;
-    padding:60px;
+    padding:0 30px 0 30px;
+    text-align: center;
+    width:25%;
   }
-  
-  .box img{
-    margin:auto;
+
+  #boxes .box img{
+    width: 35%;
   }
-  
-  
+
+footer{
+  margin-top: 25px;
+  background-color: #e8491d;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
