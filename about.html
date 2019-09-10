@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width">
+    <meta name ="description"
+          content ="Affordable and professional web design">
+    <meta name = "keywords"
+          content =" cheap web development, affordable good">
+    <title> ACME| Welcome</title>
+    <link rel="stylesheet" href="./css/style.css">
+  </head>
+  <body>
+    <header>
+      <!-- container to keep contents in a certain margin
+    id is used for unique items i.e a showcase shown maybe just once in a page
+    class is used for items to be used over and over in diff places-->
+      <div class="container">
+        <div id ="branding">
+          <!-- logo -->
+          <h1><span class="highlight">acme</span> web design</h1>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li class ="current"><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+    </div>
+    </header>
+
+    <section id= "newsletter">
+        <div class ="container">
+          <h1>Subscribe to our newsletter</h1>
+    <!-- form , u add backend connection through other scripts
+    <form class="" action="index.html" method="post">
+  use name attr when passing values-->
+          <form action="index.php" method="get">
+<!--use name attr when passing values-->
+<!--input type ="" name ="password" placeholder=""-->
+            <input type="email" placeholder="Enter Email" name="fname">
+            <button type="submit" class="button_1">Subscribe</button>
+          </form>
+        </div>
+    </section>
+
+<section id= "main">
+  <div class="container">
+    <article id="main-col">
+      <h1 class ="page-title">About Us</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+        elit. Suspendisse mauris nisi, facilisis eu rutrum
+        quis, laoreet quis ante. Vivamus varius ultrices
+       purus ac molestie. Proin non dapibus nisl. Aenean
+       vitae suscipit enim, et laoreet nulla. Sed nec dolor
+       arcu. Aliquam id erat porttitor, posuere nisi vitae,
+       sagittis tellus. Interdum et malesuada fames ac ante
+       ipsum primis in faucibus. Proin pulvinar aliquet
+       vehicula. Nam quis velit vitae enim consectetur
+       rhoncus a eget mi. Cras at lobortis sem, ac efficitur
+       libero. In ultricies rhoncus risus non consequat.
+     </p>
+
+     <p class="darktheme">
+       Morbi ut luctus quam. Nullam volutpat tellus massa.
+       Donec venenatis lobortis orci, vel blandit erat rutrum ut.
+       Pellentesque interdum neque ligula, ac hendrerit mi
+       consequat vestibulum. Mauris accumsan hendrerit ligula.
+       Suspendisse cursus sapien sit amet neque elementum
+       fermentum. Quisque aliquet suscipit elementum.
+       Duis pretium dolor tincidunt nisi auctor, dictum
+       volutpat magna suscipit. Cras aliquet mi ante,
+       eget bibendum velit eleifend vitae. Aliquam fermentum
+       orci vel aliquet venenatis. Integer commodo ullamcorper
+       nisi vel semper. Aliquam nisl nunc, finibus sit amet
+       dictum in, tempus sit amet mauris.
+     </p>
+    </article>
+
+  <aside id ="sidebar">
+    <div class="darktheme">
+    <h1>What We do</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing
+      elit. Suspendisse mauris nisi, facilisis eu rutrum
+      quis, laoreet quis ante. Vivamus varius ultrices
+      purus ac molestie. Proin non dapibus nisl.
+    </p>
+    </div>
+  </aside>
+
+  </div>
+</section>
+
+<footer>
+  <p>ACME WEB DESIGN, Copyright &copy; 2019</p>
+</footer>
+
+  </body>
+</html>
