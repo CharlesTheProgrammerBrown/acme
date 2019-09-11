@@ -56,8 +56,6 @@ body{
     font-size: 16px;
   }
 
-
-
   header li {
     float:left;
     display:inline;
@@ -158,6 +156,30 @@ margin-top:10px;
   width:65%;
 }
 
+.quote{
+height:210px;
+}
+
+.quote input[type="name"],[type="email"]{
+  padding: 4px;
+  width: 80%;
+}
+
+.quote input[type="text"]{
+  padding: 4px;
+  width: 80%;
+  height:40px;
+  margin-bottom: 5px;
+}
+
+ul#services li{
+  /*color type width*/
+  border: #cccccc solid 1px;
+  background-color: #e6e6e6;
+  padding:20px;
+  margin-bottom: 5px;
+  list-style: none;
+}
 footer{
   margin-top: 25px;
   background-color: #e8491d;
@@ -166,7 +188,24 @@ footer{
   text-align: center;
 }
 
+/*media queries
+include a block of CSS properties only if
+a certain condition is true*/
+/* will use avg tablet size 8 inch -768pixels*/
+@media(max-width:768px) {
+header #branding, header nav, header li, #newsletter h1, #newsletter form {
+  float:none;
+  text-align: center;
+  width:100%;
+}
 
-/*#sidebar .info{
-  float:left;
-}*/
+header{
+  padding-bottom:20px;
+}
+
+#showcase h1{
+//its margin is 100px by default
+margin-top:40px;
+}
+
+}
