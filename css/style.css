@@ -31,7 +31,8 @@ body{
     padding:15px;
     background-color:#35424a;
     color:#fff;
-    margin:10px 0 10px 0;
+    margin-top:10px;
+    margin-bottom:10px;
   }
 
    ul{
@@ -146,9 +147,14 @@ body{
 
 /*side bar */
 aside#sidebar{
-float:right;
-width: 30%;
-margin-top:10px;
+  float:right;
+  width:30%;
+  margin-top:10px;
+}
+aside#sidebar .quote input,
+aside#sidebar .quote textarea{
+width: 90%;
+padding:5px;
 }
 /*main-col*/
  article#main-col{
@@ -175,11 +181,14 @@ aside#sidebar .quote input, aside#sidebar .quote textarea{
 /*services*/
 ul#services li{
   /*color type width*/
+list-style: none;
+padding:20px;
   border: #cccccc solid 1px;
-  background-color: #e6e6e6;
-  padding:20px;
   margin-bottom: 5px;
-  list-style: none;
+  background-color: #e6e6e6;
+
+
+
 }
 footer{
   margin-top: 25px;
@@ -197,7 +206,7 @@ remove floats, align it to the center, change size*/
 
 @media(max-width:768px) {
 header #branding, header nav, header nav li,
-#newsletter h1,#newsletter form,#boxes .box, article #main-col{
+#newsletter h1,#newsletter form,#boxes .box, article#main-col,aside#sidebar{
   float:none;
   text-align: center;
   width:100%;
@@ -208,14 +217,18 @@ header{
 }
 
 #showcase h1{
+  /*100 by default*/
  margin-top:40px;
 }
-#newsletter input[type="email"]{
+
+#newsletter form input[type="email"] , .quote input, .quote textarea{
   width:100%;
   margin-bottom: 5px;
 }
-#newsletter .button_1{
+
+#newsletter button, .quote button{
   display: block;
   width: 100%;
 }
+
 }
