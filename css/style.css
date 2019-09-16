@@ -129,19 +129,19 @@ body{
   }
 
   #boxes{
-  margin-top: 40px;
+  margin-top: 20px;
 
   }
 
   #boxes .box{
-    display: inline-block;
-    padding:0 30px 0 30px;
-    text-align: center;
-    width:25%;
+    float:left;
+    text-align:center;
+    width:30%;
+    padding: 10px;
   }
 
   #boxes .box img{
-    width: 35%;
+    width:90px;
   }
 
 /*side bar */
@@ -150,28 +150,29 @@ float:right;
 width: 30%;
 margin-top:10px;
 }
-
- #main-col{
+/*main-col*/
+ article#main-col{
   float:left;
   width:65%;
 }
 
-.quote{
+/*.quote{
 height:210px;
+}*/
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+  padding: 5px;
+  width: 90%;
 }
 
-.quote input[type="name"],[type="email"]{
-  padding: 4px;
-  width: 80%;
-}
-
-.quote input[type="text"]{
+/*.quote input[type="text"]{
   padding: 4px;
   width: 80%;
   height:40px;
   margin-bottom: 5px;
-}
+}*/
 
+/*services*/
 ul#services li{
   /*color type width*/
   border: #cccccc solid 1px;
@@ -189,23 +190,32 @@ footer{
 }
 
 /*media queries
-include a block of CSS properties only if
-a certain condition is true*/
-/* will use avg tablet size 8 inch -768pixels*/
+my css will only work from a width of 768px*/
+/* will use avg tablet size 8 inch -768pixels
+
+remove floats, align it to the center, change size*/
+
 @media(max-width:768px) {
-header #branding, header nav, header li, #newsletter h1, #newsletter form {
+header #branding, header nav, header nav li,
+#newsletter h1,#newsletter form,#boxes .box, article #main-col{
   float:none;
   text-align: center;
   width:100%;
 }
 
 header{
-  padding-bottom:20px;
+  padding-bottom: 20px;
 }
 
 #showcase h1{
-//its margin is 100px by default
-margin-top:40px;
+ margin-top:40px;
 }
-
+#newsletter input[type="email"]{
+  width:100%;
+  margin-bottom: 5px;
+}
+#newsletter .button_1{
+  display: block;
+  width: 100%;
+}
 }
